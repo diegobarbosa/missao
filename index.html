@@ -1,8 +1,8 @@
 <html>
 
 <head>
-
-
+<meta name="viewport" content="initial-scale=1">
+ <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"> 
 <link rel="stylesheet" type="text/css" href="css.css"/>
 
 </head>
@@ -13,7 +13,7 @@
 <div id="content">
 
 	<p style="text-align:center"> 
-	<a href="#" class="btn-gerar">Gerar lista aleatória com</a>   <INPUT type="text" id="quantidade" value="8" style="width:60px">  Músicas
+	<a href="#" class="btn-gerar">Gerar lista aleatÃ³ria com</a>   <INPUT type="text" id="quantidade" value="8" style="width:60px">  MÃºsicas
 	</p>
 
 	<p style="text-align:center"> 
@@ -21,7 +21,7 @@
 	</p>
 
 	<p style="text-align:center"> 
-	<a href="#" class="btn-listar">Listar todas as Músicas</a> (<span id="qtdTotalMusicas"></span>)
+	<a href="#" class="btn-listar">Listar todas as MÃºsicas</a> (<span id="qtdTotalMusicas"></span>)
 	</p>
 
 
@@ -109,7 +109,7 @@ function showMusicas(arrayMusicas)
 		var ul = $("#listaMusicas table");
 		ul.empty();
 
-		ul.append("<tr> <th> Título </td> <th> Verso 1 </td> <th> Tom </td> </tr>"); 
+		ul.append("<tr> <th> TÃ­tulo </td> <th> Verso 1 </td> <th> Tom </td> </tr>"); 
 
 	_.each(arrayMusicas, function(mus){  
 		ul.append(
