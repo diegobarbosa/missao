@@ -1,0 +1,144 @@
+<html>
+
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="css.css"/>
+
+</head>
+
+
+<body>
+
+<div id="content">
+
+	<p style="text-align:center"> 
+	<a href="#" class="btn-gerar">Gerar lista aleatória com</a>   <INPUT type="text" id="quantidade" value="8" style="width:60px">  Músicas
+	</p>
+
+	<p style="text-align:center"> 
+	OU 
+	</p>
+
+	<p style="text-align:center"> 
+	<a href="#" class="btn-listar">Listar todas as Músicas</a> (<span id="qtdTotalMusicas"></span>)
+	</p>
+
+
+	<div id="listaMusicas">
+
+	<table>
+		
+
+	</table>
+
+	</div>
+
+</div>
+
+</body>
+
+<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript" src="underscore-min.js"></script>
+
+<script type="text/javascript">
+
+var musicas = [];
+
+$(function() {
+    
+	
+	carregar_musicas();
+
+	listar();
+
+	gerar();
+
+});
+
+
+function listar (argument) {
+	
+$(".btn-listar").click(function(){ 
+
+
+
+	var musOrdenadas = _.sortBy(musicas, function(mus){return mus.titulo;})
+
+	showMusicas(musOrdenadas);
+
+});
+
+}
+
+
+function gerar() {
+
+	$(".btn-gerar").click(function(){ 
+
+			var quantidade = parseInt($("#quantidade").val());
+			console.log(quantidade)
+			var max = musicas.length-1;
+			var arrayMusicas = [];
+			
+			while(arrayMusicas.length < quantidade)
+			{
+					var num = Math.round(Math.random()*max);
+
+					if (!_.contains(arrayMusicas, num)) 
+					{
+						arrayMusicas.push(num);
+					};
+
+			}
+
+
+
+				var filtro = function(mus, index){return _.contains(arrayMusicas, index)};
+
+			showMusicas(_.filter(musicas, filtro) );
+
+	});
+
+}
+
+
+function showMusicas(arrayMusicas)
+{
+		var ul = $("#listaMusicas table");
+		ul.empty();
+
+		ul.append("<tr> <th> Título </td> <th> Verso 1 </td> <th> Tom </td> </tr>"); 
+
+	_.each(arrayMusicas, function(mus){  
+		ul.append(
+			  "<tr>"
+			+ "<td>" + mus.titulo + "</td>"
+			+ "<td>" + mus.verso1 + "</td>"
+			+ "<td>" + mus.tom + "</td>"
+			+ "</tr>");  })
+
+}
+
+
+function carregar_musicas () {
+
+	$.getJSON( "musicas-missao.json", function( data ) { 
+  musicas = data;
+
+  $("#qtdTotalMusicas").text(musicas.length);
+  
+});
+
+	
+}
+
+
+</script>
+
+
+
+
+
+</html>
