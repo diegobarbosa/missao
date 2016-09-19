@@ -1,5 +1,18 @@
 
 
+@media print
+{
+	body{
+		background:none;
+	}
+
+	#comandos{
+		display:none;
+	}
+
+
+}
+
 @media screen and (max-width: 600px) {
 
   #content {
@@ -10,6 +23,8 @@ body
 {
 	font-size: 18px;
 }
+
+
  
 
 }
