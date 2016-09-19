@@ -27,7 +27,7 @@
 {"titulo":"Alto Preço", "verso1":"Eu sei que foi pago um alto preço para que contigo eu fosse um meu irmão" , "tom":"LAm"},
 {"titulo":"Ele exaltado", "verso1":"Ele exaltado, o Rei exaltado nos céus, eu o louvarei" , "tom":"SOL"},
 {"titulo":"Invoca-me", "verso1":"Filho Meu, Estou Aqui" , "tom":"LA"},
-{"titulo":"Gloria, gloria, Senhor", "verso1":"Gloria, gloria, Senhor" , "tom":"SOL"},
+{"titulo":"Gloria, gloria, Senhor", "verso1":"Gloria, gloria, Senhor / Te damos glória, Senhor " , "tom":"SOL"},
 {"titulo":"Grandes são as tuas obras", "verso1":"Grandes são as tuas obras" , "tom":"LA"},
 {"titulo":"Grande é  o Senhor", "verso1":"Grande é  o Senhor e mui digno de louvor" , "tom":"LA"},
 {"titulo":"Hoje é tempo", "verso1":"Hoje é tempo de louvar a Deus" , "tom":"RE"},
@@ -122,7 +122,16 @@
 {"titulo":"Maranata", "verso1":"Tú és a minha luz e a minha savação" , "tom":"MI"},
 {"titulo":"Em Tua presença", "verso1":"Eu quero estar neste lugar / Onde o pecado é perdoado" , "tom":"SOL"},
 {"titulo":"Se o Sol Se Por", "verso1":"Se o sol se pôr e a noite chegar" , "tom":"RE"},
-{"titulo":"Rede ao mar", "verso1":" Não podia entender / que você ia me querer" , "tom":"LA"}
+{"titulo":"Rede ao mar", "verso1":"Não podia entender / que você ia me querer" , "tom":"LA"},
+{"titulo":"Se Eu Me Humilhar", "verso1":"Neste lugar tu és real / Vou me entregar totalmente" , "tom":"MI"},
+{"titulo":"Teu Santo Nome", "verso1":"Todo ser que vive louve o nome do senhor" , "tom":"SOL"},
+{"titulo":"Pra onde iremos", "verso1":"Pra onde iremos nós? / Só Tu tens a Palavra de vida eterna" , "tom":"FA"},
+{"titulo":"Sua Presença é Real", "verso1":"Sua presença é real. Aqui neste lugar" , "tom":"SOL"},
+{"titulo":"Quem Nos Separará", "verso1":"Quem nos separará do amor de Cristo" , "tom":"FA"},
+ 
+ 
+
+
 
 
 
